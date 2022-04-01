@@ -20,7 +20,7 @@ except ImportError:
     )
 
 # The game you want to run. See https://github.com/deepmind/open_spiel/blob/master/docs/games.md for a list of games
-game = pyspiel.load_game("amazon")
+game = pyspiel.load_game("amazons")
 
 
 class MuZeroConfig:
