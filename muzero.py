@@ -9,7 +9,9 @@ import time
 
 import nevergrad
 import numpy
+import psutil ## maybe delete
 import ray
+ray._private.utils.get_system_memory = lambda: psutil.virtual_memory().total ## maybe delete
 import torch
 from torch.utils.tensorboard import SummaryWriter
 
