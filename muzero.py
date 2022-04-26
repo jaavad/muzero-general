@@ -648,6 +648,7 @@ if __name__ == "__main__":
 
         # Initialize MuZero
         choice = int(choice)
+        print(choice)
         game_name = games[choice]
         muzero = MuZero(game_name)
 
@@ -672,6 +673,7 @@ if __name__ == "__main__":
             while choice not in valid_inputs:
                 choice = input("Invalid input, enter a number listed above: ")
             choice = int(choice)
+            print(choice)
             if choice == 0:
                 muzero.train()
             elif choice == 1:
