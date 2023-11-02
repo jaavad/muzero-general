@@ -7,6 +7,12 @@
 
 ![ci-testing workflow](https://github.com/werner-duvaud/muzero-general/workflows/CI%20testing/badge.svg)
 
+
+
+# Our Contributions 
+
+In this project, we investigated the effectiveness of different game of Amazons representations in AlphaZero and MuZero algorithms. To accelerate training, we proposed a novel board game representation that considerably reduces the action space to the size of the board game in the neural network's policy head. Our experimental results demonstrated that the new representation significantly improves the training efficiency and performance of MuZero and AlphaZero compared to conventional representation. The new representation results in less memory usage and a reduced number of learning parameters. The approach is also readily applicable to any game with a fixed board, such as chess. With this new representation, the policy space size reduces from O(P(n)) to O(n), where P(n) represents some polynomial in n.
+
 # MuZero General
 
 A commented and [documented](https://github.com/werner-duvaud/muzero-general/wiki/MuZero-Documentation) implementation of MuZero based on the Google DeepMind [paper](https://arxiv.org/abs/1911.08265) (Schrittwieser et al., Nov 2019) and the associated [pseudocode](https://arxiv.org/src/1911.08265v2/anc/pseudocode.py).
